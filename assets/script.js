@@ -1,7 +1,6 @@
 const book = () => {
   fetch("https://striveschool-api.herokuapp.com/books")
     .then((bookObj) => {
-      console.log(bookObj);
       if (bookObj.ok) {
         return bookObj.json();
       }
